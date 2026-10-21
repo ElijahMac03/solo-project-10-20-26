@@ -17,7 +17,9 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .row__narrow {
@@ -49,30 +51,63 @@ NAVBAR ↓
 
 */
 
+.nav__link--primary{
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    margin-left: 4px;
+}
+
 .nav__link{
     text-decoration: none;
     padding: 4px 0 0;
     font-size: 14px;
+    margin: 0 24px;
+    font-weight: 600;
 }
 
 .nav__links{
     padding: 0 0 2px;
+    position: relative;
+    letter-spacing: .25px;
+    align-items: center;
+    display: flex;
 }
 
 .nav__logo--img{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+}
+
+.nav__logo--title{
+    font-size: 24px;
+    letter-spacing: .5px;
+    padding: 0 0 2px;
+    font-weight: 900;
 }
 
 nav {
     display: flex;
-    padding-top: 32px;
+    padding: 32px 0 0;
 }
 
 .nav__row {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 6px;
 }
 
 .nav__logo {
@@ -80,8 +115,114 @@ nav {
     align-items: center;
     margin: 8px 0;
     padding-bottom: 4px;
+    gap: 6px;
 }
 
+.nav__link .login{
+    padding: 0 24px 0 48px;
+    margin-right: 4px;
+}
+
+h1{
+    font-size: 48px;
+    color: #1a202c;
+}
+
+p{
+font-size: 18px;
+}
+
+
+/* 
+
+HEADER / ABOUT US ↓
+
+*/
+
+
+header .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header__img--wrapper{
+    max-width: 768px;
+    width: calc(100% - 40%);
+}
+
+.header__img{
+    width: 100%;
+    max-width: 768px;
+}
+
+.header__description{
+    min-width: 0;
+    width: 40%;
+    max-width: 100%;
+    padding-top: 25px;
+}
+
+.header__description--para{
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    line-height: 1.5;
+}
+
+.header__customers{
+    opacity: 0.5;
+    padding-right: 0px;
+    margin-top: 16px;
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.header__email--input{
+    width: calc(100% - 15%);
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+    padding: 0 24px;
+    height: 70px;
+    opacity: 0.75;
+}
+
+.header__email--btn{
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 135px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 300ms ease;
+    position: absolute;
+    height: 55px;
+    top: 490px; 
+    left: 387px;
+}
+
+.header__customers--title{
+   margin: 80px 0 0; 
+}
+
+
+/* 
+
+BURGER
+
+*/
 
 .btn__menu {
     display: none;
@@ -151,27 +292,6 @@ nav {
 }
 
 
-/* 
-
-HEADER / ABOUT US ↓
-
-*/
-
-
-header .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__img--wrapper{
-    max-width: 768px;
-    width: 100%;
-}
-
-.header__img{
-    width: 100%;
-}
 
 /* 
 
