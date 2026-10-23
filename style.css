@@ -387,10 +387,78 @@ QUALITY WORK ↓
 
 */
 
-#quality .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.quality__grid{
+    width: 80px;
+    height: 80px;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    fill: rgb(100, 21, 255);
+}
+
+.quality__img{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.quality__img--wrapper{
+    margin: 0 56px;
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
+    width: 50%;
+}
+
+.quality__description{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.quality__title{
+    font-size: 48px;
+    margin: 16px 0;
+    justify-content: center;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
+    max-width: 400px;
+}
+
+.quality__para{
+    font-size: 18px;
+    color: #7c8ba1;
+    line-height: 1.75;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+}
+
+.quality__tag{
+    color: #6415ff;
+    font-size: 18px;
+    font-weight: 650;
+    letter-spacing: 1.90px;
+}
+
+.quality__btn{
+border-radius: 9999px;
+  color: #fff;
+  background-color: #6415ff;
+  line-height: 1.5;
+  border: none;
+  transition: all 300ms ease;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  font-weight: 700;
+  margin-top: 30px;
+  width: 145px;
+  height: 43px;
 }
 
 
