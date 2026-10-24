@@ -476,6 +476,7 @@ STEPS
 
 .row__steps{
     flex-direction: row-reverse; 
+    align-items: flex-start;
 }
 
 .steps__img{
@@ -484,7 +485,7 @@ STEPS
 
 .steps__img--wrapper{
     width: 50%;
-    
+    margin-top: 52px;
 }
 
 .steps__grid{
@@ -492,8 +493,8 @@ STEPS
     height: 10rem;
     position: absolute;
     left: 325px;
-    bottom: 28px;
-    left: 308px;
+    bottom: 122px;
+    left: 312px;
     opacity: 0.8;
     z-index: -1;
 }
@@ -519,7 +520,7 @@ STEPS
 
 .step{
     display: flex;
-    margin: 32px 0 0 0;
+    margin: 20px 0 10px 0;
 }
 
 .steps__tag{
@@ -529,16 +530,19 @@ font-weight: 625;
 }
 
 .step__para{
-font-size: 16px;
+font-size: 14px;
 margin: 12px 0 0;
 color: #718096;
+flex-wrap: wrap;
+max-width: 275px;
+line-height: 2;
 }
 
 .steps__header{
     width: 100%;
     font-size: 48px;
-    padding: 4px 0 10px 0;
-    margin: 16px 0;
+    padding: 4px 0 8px 0;
+    margin: 10px 0 14px 0;
     font-weight: 850;
 }
 
