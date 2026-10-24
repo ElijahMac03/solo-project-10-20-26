@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* 
-Made the input button absolute position but it moves out of place when screen size is altered. 
-*/
 
 * {
   margin: 0;
@@ -57,9 +54,10 @@ p {
   font-size: 18px;
 }
 
+
 /* 
 
-NAVBAR ↓
+NAVBAR  
 
 */
 
@@ -135,9 +133,10 @@ nav {
   margin-right: 4px;
 }
 
+
 /* 
 
-HEADER / ABOUT US ↓
+HEADER 
 
 */
 
@@ -194,6 +193,7 @@ header .row {
   padding: 0 24px;
   height: 70px;
   opacity: 0.75;
+  position: relative;
 }
 
 .header__email--btn {
@@ -221,9 +221,10 @@ header .row {
   font-size: 15px;
 }
 
+
 /* 
 
-BURGER
+BURGER 
 
 */
 
@@ -295,9 +296,10 @@ BURGER
   right: 18px;
 }
 
+
 /* 
 
-FEATURES ↓
+FEATURES 
 
 */
 
@@ -383,25 +385,24 @@ color: #7c8ba1;
 
 /* 
 
-QUALITY WORK ↓
+QUALITY
 
 */
-
 
 .quality__grid{
     width: 80px;
     height: 80px;
-    z-index: 0;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -40px;
+    bottom: -40px;
     fill: rgb(100, 21, 255);
+    z-index: -1;
+    bottom: 70px;
+    right: 91px;
 }
 
 .quality__img{
     width: 100%;
-    z-index: 1;
-    position: relative;
 }
 
 .quality__img--wrapper{
@@ -409,6 +410,7 @@ QUALITY WORK ↓
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
     width: 50%;
+    z-index: 1;
 }
 
 .quality__description{
@@ -461,22 +463,78 @@ border-radius: 9999px;
   height: 43px;
 }
 
+.quality__container{
+    position: relative;
+}
+
 
 /* 
 
-STEPS ↓
+STEPS 
 
 */
 
-#steps .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#steps, .row__steps{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 40px 20px 0;
 }
+
+.steps__img{
+width: 100%;
+}
+
+.steps__img--wrapper{
+    width: 50%;
+}
+
+.steps__grid{
+    width: 125px;
+    height: 125px;
+}
+
+.steps__description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 48px;
+}
+
+.steps__lists{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+}
+
+.steps__tag{
+font-size: 20px;
+letter-spacing: 1.5px;
+font-weight: 600;
+}
+
+.steps__title{
+margin: 16px 0;
+font-size: 40px;
+}
+
+
+.steps__para{
+font-size: 12px;
+margin: 12px 0 0;
+}
+
+
+
 
 /* 
 
-VALUES ↓
+VALUES 
 
 */
 
@@ -486,9 +544,10 @@ VALUES ↓
   align-items: center;
 }
 
+
 /*
 
-PRICING ↓
+PRICING 
 
 */
 
@@ -498,9 +557,10 @@ PRICING ↓
   align-items: center;
 }
 
+
 /* 
 
-TESTIMONIALS ↓
+TESTIMONIALS 
 
 */
 
@@ -508,9 +568,10 @@ TESTIMONIALS ↓
   display: flex;
 }
 
+
 /* 
 
-START / CALL TO ACTION ↓
+START / CALL TO ACTION 
 
 */
 
@@ -519,9 +580,10 @@ START / CALL TO ACTION ↓
   overflow: hidden;
 }
 
+
 /* 
 
-FOOTER ↓
+FOOTER 
 
 */
 
@@ -533,9 +595,10 @@ footer {
   overflow: hidden;
 }
 
+
 /* 
 
-MOBILE RESPONSIVENESS ↓
+MOBILE RESPONSIVENESS 
 
 */
 
