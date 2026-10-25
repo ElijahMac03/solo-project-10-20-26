@@ -754,6 +754,8 @@ border-top: 2px solid rgb(229, 231, 235);
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
+    z-index: 2;
+    position: relative;
 }
 
 .pricing__description{
@@ -891,6 +893,16 @@ color: #a0aec0;
 font-weight: bold;
 font-size: 16px;
 letter-spacing: 1.75px;
+}
+
+.prices__blob{
+    position: absolute;
+    right: 89%;
+    top: 80%;
+    width: 256px;
+    height: 256px;
+    opacity: 0.25;
+    z-index: -1;
 }
 
 
