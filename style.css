@@ -1059,6 +1059,82 @@ START / CALL TO ACTION
   overflow: hidden;
 }
 
+.start__container{
+    position: relative;
+}
+
+.action__block{
+    background-color: rgb(100, 21, 255);
+    width: 100%;
+    padding: 96px 0;
+    border-radius: 8px;
+}
+
+.action__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.action__title{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 50%;
+    color: #f7fafc;
+    margin-left: 72px;
+    z-index: 2;
+}
+
+.action__btns{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    gap: 38px;
+    margin-right: 72px;
+}
+
+.action__btn--one{
+    border-radius: 500px;
+    border: none;
+    background: #f56565;
+    padding: 20px 40px;
+    color: #f7fafc;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.action__btn--two{
+border-radius: 500px;
+border: 1px solid rgb(160, 174, 192);
+padding: 20px 40px;
+color: #f7fafc;
+background-color: #6415ff;
+font-weight: 700;
+font-size: 16px;
+}
+
+.start__blob--one{
+height: 20rem;
+width: 20rem;
+right: 1050px;
+top: 88px;
+position: absolute;
+z-index: 1;
+opacity: 0.5;
+}
+
+.start__blob--two{
+position: absolute;
+height: 20rem;
+width: 20rem;
+bottom: 200px;
+right: 0;
+left: 1050px;
+opacity: 0.5;
+}
+
 
 /* 
 
