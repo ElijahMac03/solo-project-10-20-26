@@ -1142,13 +1142,14 @@ FOOTER
 
 */
 
-footer {
-  padding: 96px 32px;
+.footer__row {
   background-color: rgb(100, 21, 255);
-  margin-bottom: -32px;
-  position: relative;
-  overflow: hidden;
+  padding: 260px 100%;
 }
+
+
+
+
 
 
 /* 
@@ -1156,6 +1157,7 @@ footer {
 MOBILE RESPONSIVENESS 
 
 */
+
 
 @media (max-width: 1280px) {
   header .row {
