@@ -1142,14 +1142,50 @@ FOOTER
 
 */
 
-.footer__row {
+.footer__row, .footer__row *{
   background-color: rgb(100, 21, 255);
-  padding: 260px 100%;
+  padding: 64px 32px;
+  color: #fff;
+  display: flex;
 }
 
+.footer__column{
+    display: flex;
+    flex-direction: column;
+}
 
+.footer__info{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
+.footer__logo--img{
+    height: 32px;
+    width: 32px;
+}
 
+.footer__divider{
+    width: 100%;
+    height: 2px;
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
+}
+
+.footer__bottom{
+display: flex;
+justify-content: space-between;
+align-self: stretch;
+}
+
+.footer__logo--img{
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--text{
+
+}
 
 
 /* 
