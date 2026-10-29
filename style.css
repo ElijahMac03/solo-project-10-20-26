@@ -1281,9 +1281,10 @@ left: -92px;
     width: 320px;
     opacity: 0.5;
     z-index: 2;
-    top: 398px;
+    top: 400px;
     right: -124px;
 }
+
 
 /* 
 
@@ -1298,6 +1299,15 @@ MOBILE RESPONSIVENESS
   }
 }
 
+
+/* 
+1280 NOTES: 
+Get Started Button in landing is misaligned  
+Grid in quality work is misaligned 
+Grid in steps is misaligned
+*/
+
+
 @media (max-width: 1024px) {
   .btn__menu {
     display: block;
@@ -1310,6 +1320,19 @@ MOBILE RESPONSIVENESS
     padding: 80px 32px;
   }
 }
+
+
+/* 
+1024 NOTES: 
+Burger present while links are still visible
+Landing is in column format 
+Get started button is misaligned 
+Grid in quality is misaligned 
+Grid in steps is misaligned 
+Children of start are misaligned; the buttons and words are too big 
+Footer isn't occupying 100% of the available width; blobs are visible beyond desire 
+*/
+
 
 @media (max-width: 768px) {
   #quality .row,
@@ -1326,6 +1349,21 @@ MOBILE RESPONSIVENESS
   }
 }
 
+
+/* 
+768 NOTES: 
+Burger present while links are still visible 
+Landing is in column format; get started button is misaligned 
+Quality is in column format; grid is misaligned 
+Steps is in column format 
+Values is in column format 
+Pricing is misaligned; buy now buttons are misaligned; blob appears to be slightly misaligned 
+Testimonials is misaligned 
+Start is out of proportion 
+Footer isn't occupying 100% of the available width; blobs are visible beyond desire  
+*/
+
+
 @media (max-width: 640px) {
   .container {
     padding: 80px 0;
@@ -1338,3 +1376,17 @@ MOBILE RESPONSIVENESS
     margin-bottom: 80px;
   }
 }
+
+/* 
+640 NOTES: 
+Burger present while links are still visible 
+Landing is in column format; get started button is misaligned 
+Features is misaligned 
+Quality is in column format; grid is misaligned 
+Steps is in column format; grid is misaligned 
+Values is in column format 
+Pricing is misaligned; buy now buttons are misaligned; blob is slightly misaligned 
+Testimonials is out of proportion 
+Start is out of proportion 
+Footer isn't occupying 100% of the available width; blobs are misaligned and visible beyond desire 
+*/
