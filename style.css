@@ -76,7 +76,8 @@ NAVBAR
   border-top: 8px solid transparent;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  margin-left: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__link {
@@ -88,7 +89,7 @@ NAVBAR
 }
 
 .nav__links {
-  padding: 0 0 2px;
+  padding: 0 2px;
   position: relative;
   letter-spacing: 0.25px;
   align-items: center;
@@ -116,8 +117,6 @@ nav {
 .nav__row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 6px;
 }
 
 .nav__logo {
@@ -128,9 +127,9 @@ nav {
   gap: 6px;
 }
 
-.nav__link .login {
-  padding: 0 24px 0 48px;
-  margin-right: 4px;
+.nav__link--login {
+    margin-left: 48px;
+    margin-right: 2px;
 }
 
 
@@ -144,6 +143,7 @@ header .row {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+align-items: center;
 }
 
 .header__img--wrapper {
@@ -160,7 +160,6 @@ header .row {
   min-width: 0;
   width: 40%;
   max-width: 100%;
-  padding-top: 25px;
 }
 
 .header__description--para {
@@ -190,7 +189,7 @@ header .row {
   bottom: 0;
   z-index: 1;
   transition: border-color 300ms;
-  padding: 0 24px;
+  padding: 20px 192px 20px 32px;
   height: 70px;
   opacity: 0.75;
   padding-right: 160px;
@@ -216,7 +215,7 @@ header .row {
 }
 
 .header__customers--title {
-  margin: 80px 0 0;
+  margin: 75px 0 0;
   color: rgb(160, 174, 192);
   font-weight: 700;
   font-size: 15px;
@@ -226,6 +225,7 @@ header .row {
 position: relative;
 align-items: center;
 justify-content: center;
+max-width: 448px;
 }
 
 
@@ -396,20 +396,22 @@ QUALITY
 
 */
 
+
 .quality__grid{
-    width: 80px;
-    height: 80px;
+    width: clamp(48px, 8vw, 80px);
+    height: clamp(48px, 8vw, 80px);
     position: absolute;
-    right: -40px;
-    bottom: -40px;
     fill: rgb(100, 21, 255);
-    z-index: -1;
-    right: -2.5rem;
-    bottom: -2.5rem;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, calc(50% - 1.25px));
 }
 
 .quality__img{
-    width: 100%;
+    width: 90%;
+    position: relative;
+    z-index: 1;
 }
 
 .quality__img--wrapper{
@@ -417,7 +419,6 @@ QUALITY
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
     width: 50%;
-    z-index: 2;
     position: relative;
 }
 
@@ -1296,7 +1297,18 @@ MOBILE RESPONSIVENESS
 
 @media (max-width: 1280px) {
   header .row {
-    align-items: flex-start;
+    align-items: flex-end;
+  }
+  h1{
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  .header__img{
+    max-width: 512px;
+  }
+  .header__img--wrapper{
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -1320,6 +1332,7 @@ Grid in steps is misaligned
   footer {
     padding: 80px 32px;
   }
+  
 }
 
 
