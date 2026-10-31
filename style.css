@@ -417,7 +417,7 @@ QUALITY
 }
 
 .quality__img--wrapper{
-    margin: 0;
+    margin: 0 56px;
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
     width: 50%;
@@ -595,6 +595,7 @@ VALUES
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1.6px;
+    text-transform: uppercase;
 }
 
 .values__header--description{
@@ -635,6 +636,9 @@ VALUES
 .values__perk{
     display: flex;
     flex-direction: column;
+}
+
+.values__perk--pro{
 }
 
 .values__header{
@@ -1319,6 +1323,11 @@ MOBILE RESPONSIVENESS
   .btn__menu {
     display: block;
   }
+
+  .nav__links{
+    display: none;
+  }
+
   header .row {
     flex-direction: column;
     align-items: center;
@@ -1326,17 +1335,90 @@ MOBILE RESPONSIVENESS
   footer {
     padding: 80px 32px;
   }
-  
-}
 
+  h1{
+    font-size: 30px;
+  }
+
+  .header__description, .header__img--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 512px;
+  }
+
+  .header__customers--title{
+    margin-top: 48px;
+  }
+
+  .header__customers{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header__description--para{
+    margin: 20px 0;
+    font-size: 16px;
+    padding: 0 0;
+  }
+
+  .quality__title{
+    font-size: 36px;
+  }
+
+  .quality__para{
+    font-size: 16px;
+  }
+
+  .quality__description{
+    margin-right: 0px;
+    padding-right: 48px;
+  }
+
+  .steps__grid{
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .steps__header{
+    font-size: 36px;
+    margin: 16px 0;
+  }
+
+  .values__tag{
+    font-size: 16px;
+  }
+
+  .values__title{
+    font-size: 36px;
+    width: 400px;
+  }
+
+  .values__para--header{
+    font-size: 16px;
+  }
+
+  .values__list{
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+  }
+
+  .values__perk--pro{
+    margin-top: 32px;
+  }
+
+  .values__perk--tag{
+    font-size: 20px;
+    margin: 0 0 0 6px;
+  }
+}
 
 /* 
 1024 NOTES: 
-Burger present while links are still visible
-Landing is in column format 
-Get started button is misaligned 
-Grid in quality is misaligned 
-Grid in steps is misaligned 
 Children of start are misaligned; the buttons and words are too big 
 Footer isn't occupying 100% of the available width; blobs are visible beyond desire 
 */
@@ -1356,7 +1438,6 @@ Footer isn't occupying 100% of the available width; blobs are visible beyond des
     margin-top: 40px;
   }
 }
-
 
 /* 
 768 NOTES: 
