@@ -1125,8 +1125,8 @@ font-size: 16px;
 .start__blob--one{
 height: 20rem;
 width: 20rem;
-right: 1050px;
-top: 88px;
+right: 82.5%;
+top: 32.5%;
 position: absolute;
 z-index: 1;
 opacity: 0.5;
@@ -1136,9 +1136,8 @@ opacity: 0.5;
 position: absolute;
 height: 20rem;
 width: 20rem;
-bottom: 200px;
-right: 0;
-left: 1050px;
+bottom: 75%;
+left: 82.5%;
 opacity: 0.5;
 }
 
@@ -1278,8 +1277,8 @@ height: 320px;
 width: 320px;
 opacity: 0.5;
 z-index: 2;
-top: -116px;
-left: -92px;
+bottom: 60%;
+right: 85%;
 }
 
 .footer__blob--2{
@@ -1288,8 +1287,8 @@ left: -92px;
     width: 320px;
     opacity: 0.5;
     z-index: 2;
-    top: 400px;
-    right: -124px;
+    top: 75%;
+    left: 87%;
 }
 
 
@@ -1304,13 +1303,16 @@ MOBILE RESPONSIVENESS
   header .row {
     align-items: flex-end;
   }
+
   h1{
     font-size: 36px;
     line-height: 1.25;
   }
+
   .header__img{
     max-width: 512px;
   }
+
   .header__img--wrapper{
     display: flex;
     justify-content: flex-end;
@@ -1350,19 +1352,15 @@ MOBILE RESPONSIVENESS
     width: 100%;
   }
 
-.footer__blob--2{
+    .footer__blob--2{
         z-index: 0;
         position: absolute;
-        top: 80%;
-    }
-
-    .footer__blob--1{
-        
+        top: 75%;
     }
 
 .footer__socials{
         position: relative;
-        z-index: 2;
+    z-index: 2;
         right: 0;
     }
 
@@ -1532,14 +1530,7 @@ MOBILE RESPONSIVENESS
   #start .row{
     position: relative;
   }
-
-
 }
-
-/* 
-1024 NOTES: 
-Footer isn't occupying 100% of the available width; blobs are visible beyond desire 
-*/ 
 
 
 @media (max-width: 768px) {
@@ -1556,7 +1547,6 @@ Footer isn't occupying 100% of the available width; blobs are visible beyond des
     margin-top: 40px;
   }
 }
-
 /* 
 768 NOTES: 
 Burger present while links are still visible 
@@ -1583,7 +1573,6 @@ Footer isn't occupying 100% of the available width; blobs are visible beyond des
     margin-bottom: 80px;
   }
 }
-
 /* 
 640 NOTES: 
 Burger present while links are still visible 
