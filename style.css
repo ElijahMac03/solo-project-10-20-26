@@ -675,7 +675,6 @@ PRICING
     background-color: rgb(255 255 255);
     border-radius: 0.5rem;
     margin-top: 2rem;
-    margin-right: 2rem;
     position: relative;
 }
 
@@ -1415,13 +1414,36 @@ MOBILE RESPONSIVENESS
     font-size: 20px;
     margin: 0 0 0 6px;
   }
+
+  .prices__para{
+    font-size: 16px;
+  }
+
+  .plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .prices__blob{
+    top: 95%;
+    position: absolute;
+  }
+
+  .plan{
+    max-width: 24rem;
+    width: 100%;
+  }
+
+  
 }
 
 /* 
 1024 NOTES: 
 Children of start are misaligned; the buttons and words are too big 
 Footer isn't occupying 100% of the available width; blobs are visible beyond desire 
-*/
+*/ 
 
 
 @media (max-width: 768px) {
