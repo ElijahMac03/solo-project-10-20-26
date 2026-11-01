@@ -1060,6 +1060,7 @@ START / CALL TO ACTION
 #start .row {
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .start__container{
@@ -1868,10 +1869,58 @@ font-size: 14px;
     width: 64px;
 }
 
+.action__title{
+    font-size: 24px;
 }
 
-/* 
-640 NOTES: 
-Start is out of proportion 
-Footer isn't occupying 100% of the available width; blobs are misaligned and visible beyond desire 
-*/
+.action__btns{
+flex-direction: column;
+width: auto;
+gap: 16px;
+}
+
+.action__btn--one{
+    padding: 14px 16px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.action__btn--two{
+padding: 14px 16px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.start__blob--one{
+    top: 62.5%;
+}
+
+.footer__info{
+justify-content: center;
+}
+
+.footer__column{
+    width: auto;
+    padding: 0 16px;
+}
+
+.footer__blob--1{
+bottom: 68%;
+right: 65%;
+}
+
+.footer__blob--2{
+top: 75%;
+left: 75%;
+}
+
+.footer__copyright{
+    font-size: 14px;
+}
+
+}
+
+
+
+
+
