@@ -1038,6 +1038,7 @@ font-size: 20px;
 font-weight: 700;
 line-height: 1.625;
 margin: 0 0 2px 0;
+color: #4a5568;
 }
 
 .divider{
@@ -1679,14 +1680,82 @@ MOBILE RESPONSIVENESS
         align-items: center;
     }
 
-    
+    #test .row{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .test__img{
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .test__header{
+        margin: 0 0;
+    }
+
+    .test__para{
+        font-size: 14px;
+    }
+
+    .test__info{
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 64px 0 0 0;
+    }
+
+    .test__bottom{
+        width: 100%;
+    }
+
+    .test__title{
+        width: 100%;
+    }
+
+    .test__btn{
+        margin: 0 8px;
+    }
+
+    .action__btn--one{
+        z-index: 2;
+    }
+
+    .footer__info{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer__column{
+        width: calc(100% / 3);
+    }
+
+    .footer__bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__copyright{
+        margin: 32px 0 0 0;
+    }
+
+    .footer__socials{
+        margin: 32px 0 0 0;
+    }
+
+    .footer__blob--1{
+        bottom: 75%;
+        right: 72.5%;
+    }
+
+    .footer__blob--2{
+        top: 82.5%;
+        left: 75%;
+    }
 }
-/* 
-768 NOTES:  
-Testimonials is misaligned 
-Start is out of proportion 
-Footer isn't occupying 100% of the available width; blobs are visible beyond desire 
-*/
 
 
 @media (max-width: 640px) {
@@ -1700,10 +1769,56 @@ Footer isn't occupying 100% of the available width; blobs are visible beyond des
   main {
     margin-bottom: 80px;
   }
+
+  .header__email{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__email--btn{
+    margin-bottom: 0;
+    position: static;
+    z-index: auto;
+    transform: none;
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
+
+  .header__email--input{
+    position: static;
+    z-index: auto;
+  }
+
+  .header__description{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__customers--title{
+    margin: 32px 0 0 0;
+  }
+
+  .header__customers{
+    margin-top: 8px;
+  }
+
+  .section__title{
+    font-size: 36px;
+  }
+
+  .feature__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quality__title{
+    font-size: 30px;
+  }
 }
 /* 
 640 NOTES: 
-Burger present while links are still visible 
 Landing is in column format; get started button is misaligned 
 Features is misaligned 
 Quality is in column format; grid is misaligned 
