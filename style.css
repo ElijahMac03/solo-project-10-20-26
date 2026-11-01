@@ -1238,6 +1238,8 @@ width: 90%;
 .footer__socials{
     display: flex;
     margin: 0 0;
+    z-index: 5;
+    position: relative;
 }
 
 .footer__social--link{
@@ -1305,7 +1307,7 @@ right: 85%;
     width: 320px;
     opacity: 0.5;
     z-index: 2;
-    top: 75%;
+    top: 77.5%;
     left: 87%;
 }
 
